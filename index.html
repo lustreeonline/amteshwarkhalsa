@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amteshwar Khalsa - NCSU Leader</title>
+<style>
+/* Reset & Base */
+* {margin:0;padding:0;box-sizing:border-box;}
+body {font-family:'Segoe UI', Tahoma, sans-serif; background:#fff; color:#222; scroll-behavior:smooth;}
+a{text-decoration:none;color:inherit;}
+
+/* Navbar */
+nav {
+  position: fixed; top:0; left:0; width:100%;
+  background: rgba(196,0,0,0.95); padding:15px 40px;
+  display:flex; justify-content:space-between; align-items:center;
+  z-index:1000; transition:0.3s;
+}
+nav h1{color:#fff;font-size:1.5rem;}
+nav ul{list-style:none; display:flex; gap:20px;}
+nav ul li a{color:#fff; font-weight:bold; transition:0.3s;}
+nav ul li a:hover{color:#ffcccc;}
+
+/* Hero Section with Parallax */
+header {
+  height:100vh;
+  display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;
+  color:white; 
+  background: url('https://upload.wikimedia.org/wikipedia/en/0/09/National_Conference_logo.png') ;
+  background-color: #c40000; /* fallback color */
+  position:relative; overflow:hidden;
+}
+header::after{
+  content:""; position:absolute; top:0; left:0; width:100%; height:100%;
+  background: rgba(196,0,0,0.6); /* overlay to keep text readable */
+}
+header h1{font-size:3rem; margin-bottom:10px; position:relative; z-index:1;}
+header p{font-size:1.2rem; position:relative; z-index:1;}
+
+
+/* Sections */
+section{max-width:1000px; margin:auto; padding:80px 20px; opacity:0; transform:translateY(40px); transition:all 0.8s ease;}
+section.visible{opacity:1; transform:translateY(0);}
+section h2{text-align:center; font-size:2rem; margin-bottom:40px; color:#c40000; position:relative;}
+section h2::after{content:''; width:60px; height:4px; background:#c40000; display:block; margin:10px auto 0; border-radius:2px;}
+
+/* Cards */
+.card {
+  background:#fff; padding:25px; border-radius:12px; box-shadow:0px 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display:flex; flex-direction:column; align-items:flex-start; gap:10px;
+}
+.card:hover{
+  transform: translateY(-8px) rotateX(3deg) rotateY(3deg);
+  box-shadow:0px 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Grid */
+.grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:25px;}
+
+/* Counters */
+.counters{display:flex; justify-content:space-around; text-align:center; gap:20px; flex-wrap:wrap;}
+.counter{font-size:2.5rem; color:#c40000; font-weight:bold;}
+
+/* Timeline */
+.timeline{position:relative; padding-left:30px; border-left:3px solid #c40000;}
+.timeline div{margin-bottom:25px; opacity:0; transform:translateX(-30px); transition:all 0.6s ease-out;}
+.timeline div.show{opacity:1; transform:translateX(0);}
+
+/* Buttons */
+button{padding:10px 20px; background:#c40000; color:#fff; border:none; border-radius:5px; cursor:pointer; transition:0.3s;}
+button:hover{background:#a30000; transform:scale(1.05);}
+
+/* Footer */
+footer{text-align:center; background:#c40000; color:white; padding:20px; margin-top:50px;}
+footer a{margin:0 8px; color:white; font-size:1.2rem; transition:color 0.3s;}
+footer a:hover{color:#ffdada;}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h1>Amteshwar Khalsa</h1>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#Key Accomplishments">Key Accomplishments</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#interests">Interests</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<header>
+  <h1>Amteshwar Khalsa</h1>
+  <p>Working President – NCSU, GDC Kunjwani</p>
+</header>
+
+<!-- About -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>I am a student political leader and the Working President of NCSU at GDC Kunjwani, Jammu. I focus on student welfare, academic growth, and youth empowerment. I am Amteshwar Khalsa, a student political leader and the Working President of the National Conference Student Union (NCSU) at GDC Kunjwani, Jammu. As an active representative of the student community, I am dedicated to voicing the concerns, aspirations, and rights of young people within my institution and beyond.
+In my role as Working President, I focus on promoting student welfare, academic opportunities, and equal representation. I believe that students are not only the foundation of the educational system but also the future leaders of society. With this vision, I work to build an inclusive environment where every student feels empowered to express their ideas, contribute to decision-making, and participate in meaningful change.
+My leadership reflects my commitment to strengthening student unity, addressing challenges related to education, and ensuring that student voices are recognized in important discussions. My dedication extends beyond academic concerns to social awareness, youth empowerment, and community engagement.
+Through my active participation in NCSU, I strive to inspire my peers to take responsibility, engage in leadership, and work towards progress. My approach combines energy, responsibility, and vision, and I am proud to serve as a representative of GDC Kunjwani and a youth leader of Jammu.</p>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education">
+  <h2>Education</h2>
+  <div class="card">
+    <p>Pursuing B.Com at GDC Kunjwani. Completed O Level Course in Computer Studies.</p>
+  </div>
+</section>
+
+<!-- Work -->
+<section id="work">
+  <h2>My Work & Responsibilities</h2>
+  <div class="grid">
+    <div class="card">Leading student representation as Working President of NCSU.</div>
+    <div class="card">Organizing welfare initiatives and campaigns.</div>
+    <div class="card">Improving safety, resources, and opportunities for students.</div>
+    <div class="card">I focus on representing the voice of students and ensuring their concerns are heard at the right platforms. My work is centered on building a strong, supportive, and inclusive student community</div>
+    <div class="card">I am responsible for organizing student meetings, coordinating with faculty and administration, and addressing issues related to academics, facilities, and student welfare</div>
+    <div class="card">I also work on creating opportunities for students to participate in cultural, social, and political activities that help in their overall growth</div>
+    <div class="card">My role involves guiding fellow students, resolving conflicts, and standing up for their rights</div>
+    <div class="card">I take active part in policy discussions and initiatives that aim to improve the educational environment and promote youth engagement in democratic processes</div>
+    <div class="card">Through my leadership, I strive to encourage teamwork, discipline, and a spirit of service among students while ensuring their voices contribute meaningfully to the larger goals of our institution and community</div>
+</div>
+</section>
+
+<!-- Key Accomplishments -->
+<section>
+     <h2>Key Accomplishments</h2>
+      <ul> 
+    <li>Successfully organized student union activities and awareness programs.</li>
+     <li>Actively represented students in discussions with administration.</li> 
+     <li>As the Working President of the National Conference Student Union (NCSU) at GDC Kunjwani, I have worked with dedication to create a stronger voice for students and bring meaningful changes on campus</li>
+     <li>Built an active platform where students can confidently raise their concerns, ensuring their issues are addressed at both the administrative and organizational levels.</li>
+     <li>Successfully planned and coordinated multiple student meetings, cultural programs, and awareness campaigns that encouraged participation, unity, and leadership among youth.</li>
+     <li>Took initiatives to improve academic resources, campus facilities, and extracurricular opportunities, ensuring a more supportive environment for students’ growth.</li>
+     <li>Motivated fellow students to engage in decision-making, policy discussions, and democratic processes, developing confidence and responsibility among the younger generation.</li>
+     <li>Worked towards strengthening the presence of NCSU in GDC Kunjwani by mobilizing students, encouraging active membership, and building a community based on discipline, service, and teamwork. </li>
+     <li>Acted as a bridge between students and faculty, addressing conflicts, guiding peers in academic and personal challenges, and promoting harmony on campus.</li>
+     <li>Laid the foundation for long-term student development programs that not only focus on academics but also prepare students to become socially responsible leaders.</li>
+
+    </section>
+
+<!-- Achievements -->
+<section id="achievements">
+  <h2>Achievements</h2>
+  <div class="counters">
+    <div>
+      <div class="counter" data-target="70">0</div>
+      <p>Student Events</p>
+    </div>
+    <div>
+      <div class="counter" data-target="3">0</div>
+      <p>Years of Leadership</p>
+    </div>
+    <div>
+      <div class="counter" data-target="3000">0</div>
+      <p>Students Represented</p>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline -->
+<section id="experience">
+  <h2>Experience Timeline</h2>
+  <div class="timeline">
+    <div><strong>2025:</strong> Became Working President of NCSU at GDC Kunjwani.</div>
+    <div><strong>2024:</strong> Organized student awareness campaigns.</div>
+    <div><strong>2023:</strong> Represented students in faculty discussions.</div>
+  </div>
+</section>
+
+<!-- Interests -->
+<section id="interests">
+  <h2>Personal Interests</h2>
+  <div class="card">
+    <p>Passionate about Gatka sport, youth empowerment, and community service. I enjoy outdoor activities and student engagement. Outside of my political and leadership responsibilities, I believe in living a balanced and meaningful life shaped by culture, discipline, and service. My personal interests reflect both my individuality and my commitment to community growth.
+One of my strongest passions is sports and traditional martial arts, particularly Gatka. Practicing Gatka has taught me discipline, focus, courage, and respect for cultural heritage. It is not just a sport for me but a way of life that strengthens my physical fitness, sharpens my mind, and instills values of self-defense and protection of others. Through this practice, I find fulfillment and a constant reminder of the importance of resilience and teamwork.
+I also enjoy spending time outdoors, as nature gives me peace, clarity, and a fresh perspective on leadership and problem-solving. These moments allow me to reflect on my goals and stay grounded, even while handling the responsibilities of student politics.
+Another interest close to my heart is youth empowerment and social issues. I am naturally drawn to working on matters like safety, equality, and opportunities for students—especially creating safe spaces for young people to express themselves and grow with confidence. This passion guides much of my leadership work and continues to inspire me in daily life.
+I value personal connections and meaningful conversations, whether with friends, peers, or community members. Engaging with people helps me understand diverse perspectives and strengthens my ability to serve others with empathy.
+Through all these interests, I aim to live with purpose, combining leadership, education, cultural pride, and community service. They are not just hobbies but guiding forces that shape who I am and how I contribute to society.</p>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: <a href="mailto:amteshwarsingh05@gmail.com">amteshwarsingh05@gmail.com</a></p>
+    <p>Socials: 
+      <a href="https://www.facebook.com/share/19Yrwf42HR/" target="_blank">Facebook</a> | 
+      <a href="https://www.instagram.com/amteshwar_?igsh=MWs2Mml6emJlNnllOA==" target="_blank">Instagram</a> | 
+      <a href="https://www.linkedin.com/in/amteshwar-khalsa-ncsu-8ab068384" target="_blank">LinkedIn</a>
+    </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Amteshwar Khalsa | NCSU Leader</p>
+</footer>
+
+<script>
+// Scroll reveal for sections
+const sections = document.querySelectorAll('section');
+window.addEventListener('scroll', () => {
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100) sec.classList.add('visible');
+  });
+
+  // Timeline reveal
+  const timelineItems = document.querySelectorAll('.timeline div');
+  timelineItems.forEach(item => {
+    const top = item.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100) item.classList.add('show');
+  });
+});
+
+// Counter animation
+const counters = document.querySelectorAll('.counter');
+counters.forEach(counter => {
+  const updateCount = () => {
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText;
+    const increment = Math.ceil(target / 50);
+    if(count < target){
+      counter.innerText = count + increment;
+      setTimeout(updateCount, 40);
+    } else { counter.innerText = target; }
+  };
+  updateCount();
+});
+</script>
+</body>
+</html>
